@@ -138,21 +138,30 @@ fieldset {
     min-width: 150px;
 }
 
-/* Button */
-button {
-    background-color: #0057b8;
+/* Unified Button Style */
+.button {
     color: white;
-    padding: 12px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    padding: 12px;
     width: 100%;
     text-align: center;
     font-size: 16px;
-    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #003b7a;
+/* Unique Button Colors */
+.signup-button {
+    background-color: #28a745; /* Green */
+}
+
+.product-button {
+    background-color: #007bff; /* Blue */
+}
+
+/* Hover Effects */
+.button:hover {
+    opacity: 0.9;
 }
 
 /* Fix Layout for Small Screens */
@@ -167,6 +176,7 @@ button:hover {
         width: 100%;
     }
 }
+
 /* Responsive Design for Tablets */
 @media (max-width: 1024px) {
     .media-container {

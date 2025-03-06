@@ -119,7 +119,7 @@ fieldset {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* Add padding to prevent touching edges */
 }
 
 .form-group label {
@@ -135,21 +135,25 @@ fieldset {
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    min-width: 150px;
+    width: 100%; /* Ensures inputs fit inside container */
 }
 
-/* Unified Button Style */
-.button {
+/* Unified Button Styles */
+.btn {
+    background-color: #0057b8;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
     padding: 12px;
+    border: none;
+    cursor: pointer;
     width: 100%;
     text-align: center;
     font-size: 16px;
+    border-radius: 5px;
 }
 
+.btn:hover {
+    background-color: #003b7a;
+}
 /* Unique Button Colors */
 .signup-button {
     background-color: #28a745; /* Green */
@@ -169,14 +173,16 @@ fieldset {
     .form-group {
         flex-direction: column;
         align-items: flex-start;
+        padding: 15px; /* Extra padding on mobile */
     }
-
     .form-group input,
     .form-group select {
-        width: 100%;
+        width: 100%; /* This makes sure inputs take full width */
+        padding: 10px; /* Adds padding inside input */
+        margin: 5px 0; /* Adds vertical spacing */
+        box-sizing: border-box; /* Ensures padding doesn’t affect width */
     }
 }
-
 /* Responsive Design for Tablets */
 @media (max-width: 1024px) {
     .media-container {

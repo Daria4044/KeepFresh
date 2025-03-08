@@ -24,4 +24,4 @@ This website is built with **HTML and CSS only**, without any frameworks.
 2. Browse and track groceries.  
 3. Enjoy! 🎉  
 
-🚀 Created by Daria Malceva  
+🚀 Created by Daria MalcevaMAliteva  
